@@ -27,7 +27,6 @@ void setup(){
   image = loadImage("images.jpg");
   surface.setSize(canvasX, canvasY);
  
-
   day = true;
   sun = new sun();
   moon = new moon();
@@ -59,7 +58,6 @@ void setup(){
   houses[3] = new House(500,500);
   houses[4] = new House(650,500);
   
-  
   stars1 = new star[4];
   stars1[0] = new star(100,50);
   stars1[1] = new star(300,50);
@@ -82,25 +80,7 @@ void draw(){
 }
 
 void drawImage(){
- 
-  if(angleOfTheSun >= 500){
-    //display night stuff
-    tint(84, 91, 102);
-    
-    //stars
-    if(angleOfTheSun%100 <= 50){
-      for(int i = 0; i < stars1.length; i++){
-        stars1[i].changeColor();
-        stars2[i].defaultColor();
-      }
-    }
-    else{
-      for(int i = 0; i < stars1.length; i++){
-        stars2[i].changeColor();
-        stars1[i].defaultColor();
-      }
-    }
-  }
+  
   //background
   image(image, 0, 0);
   
@@ -111,8 +91,22 @@ void drawImage(){
   angleOfTheMoon = (angleOfTheMoon + angularSpeedOfTheSun)% maxAngle;
   
   if(angleOfTheSun >= 500){
-    //bat
+    //night stuff
+    tint(84, 91, 102);
     bat.move();
+    //stars
+    if(angleOfTheMoon%100 <= 50){
+      for(int i = 0; i < stars1.length; i++){
+        stars1[i].changeColor();
+        stars2[i].defaultColor();
+        }
+     }
+    else{
+      for(int i = 0; i < stars1.length; i++){
+        stars2[i].changeColor();
+        stars1[i].defaultColor();
+      }
+    }
   }
   else{
     //display day stuff
@@ -129,6 +123,5 @@ void drawImage(){
   //houses
   for (int i = 0; i < houses.length; i++){
     houses[i].display(angleOfTheSun < 500);
-  }
-   
+  }  
 }
