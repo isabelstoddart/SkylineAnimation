@@ -3,6 +3,8 @@ This program was created by me and two group members for an animation class take
 
 To run the program put all files into Processing including all of the object classes and the main SkylineAnimation class and click Run!
 
+You can download processing here -> https://processing.org/download/
+
 The intended animation is a scene going from day to night. The scene includes
 a collection of buildings and houses, a sun that goes across the screen and a
 bird that flies across the screen while flapping its wings during the day. The
