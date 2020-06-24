@@ -1,7 +1,7 @@
 # SkylineAnimation
 This program was created by me and two group members for an animation class taken at UT Austin.
 
-To run the program put all files into Processing including all of the object classes and the main SkylineAnimation class and click Run!
+To run the program first download Processing, then download all of the files and open the skylineAnimation.pde file inside of the skylineAnimation folder and click Run! Be sure to click the skylineAnimation.pde inside of the folder.
 
 You can download processing here -> https://processing.org/download/
 
