@@ -1,5 +1,5 @@
 # SkylineAnimation
-This program was created by me and two group members for an animation class taken at UT Austin.
+This program was created by me and two group members for a graphics class taken at UT Austin.
 
 To run the program first download Processing, then download all of the files and open the skylineAnimation.pde file inside of the skylineAnimation folder and click Run! Be sure to click the skylineAnimation.pde inside of the folder.
 
